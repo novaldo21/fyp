@@ -1,0 +1,18 @@
+[
+    {
+        "id": "b1d46452-e98e-4500-8a85-579dd205fb7e",
+        "course": "Religion",
+        "time": "10:30",
+        "room": "Mosque",
+        "status": "Single",
+        "day": "Friday"
+    },
+    {
+        "id": "696f5021-286a-4670-9e3a-c72eeb50b72e",
+        "course": "Math",
+        "time": "12:30",
+        "room": "Main Hall",
+        "status": "Taken",
+        "day": "Sunday"
+    }
+]
