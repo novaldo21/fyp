@@ -42,7 +42,7 @@ def add_schedule():
     schedules.append(new_schedule)
     update_table()
     save_data()
-    input_window.destroy()
+    input_window.withdraw()
 
 
 # حذف مادة
@@ -73,10 +73,15 @@ def edit_schedule():
 
 def openInputWindow():
     course_entry.delete(0, tk.END)
+
     time_entry.delete(0, tk.END)
+
     room_entry.delete(0, tk.END)
+
     status_entry.delete(0, tk.END)
+
     day_entry.delete(0, tk.END)
+
     input_window.deiconify()
 
 
@@ -162,8 +167,6 @@ table_frame = tk.Frame(root, bg="#1E1E1E")
 table_frame.pack(expand=True, fill="both", padx=30, pady=10)
 
 columns = ("اليوم", "المادة", "القاعة", "الوقت", "الحالة")
-columns_en = ("day", "course", "room", "time", "status")
-
 
 tree = ttk.Treeview(table_frame, columns=columns, show="headings")
 style = ttk.Style()
@@ -273,7 +276,6 @@ add_btn = tk.Button(
 )
 
 add_btn.pack(pady=15)
-
 
 # تحميل البيانات وتحديث الجدول
 load_data()
